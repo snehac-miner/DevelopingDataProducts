@@ -6,7 +6,7 @@ shinyUI(pageWithSidebar(
   headerPanel("To calculate volume and surface area of Cuboid"),
   sidebarPanel(
     
-    h4('Dear User, please enter the length, breadth and height of the cuboid in the respective input columns as indicated')
+    
     textInput(inputId='length','Input Length', value='0'),
     textInput(inputId='breadth','Input Breadth', value='0'),
     textInput(inputId='height','Input Height', value='0'),
@@ -19,7 +19,8 @@ shinyUI(pageWithSidebar(
             h4('Surface Area'),
             verbatimTextOutput("oid2"),
             h4('The date today is'),
-            verbatimTextOutput("odate")
+            verbatimTextOutput("odate"),
+            h5('Dear User, please enter the length, breadth and height of the cuboid in the respective input columns as indicated')
 #             plotOutput('newHist')
 #             
   )))
