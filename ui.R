@@ -6,6 +6,7 @@ shinyUI(pageWithSidebar(
   headerPanel("To calculate volume and surface area of Cuboid"),
   sidebarPanel(
     
+    h4('Dear User, please enter the length, breadth and height of the cuboid in the respective input columns as indicated')
     textInput(inputId='length','Input Length', value='0'),
     textInput(inputId='breadth','Input Breadth', value='0'),
     textInput(inputId='height','Input Height', value='0'),
